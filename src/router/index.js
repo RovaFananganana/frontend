@@ -172,14 +172,15 @@ router.beforeEach(async (to, from, next) => {
     if (!authStore.isAuthenticated) {
       // Si pas d'authentification, tentative d'initialisation depuis le stockage local
       const initialized = await authStore.initializeAuth()
+      console.log(`je suis la variable initialized : ${initialized} `)
       
-      if (!initialized) {
-        // Redirection vers la page de connexion avec l'URL de retour
-        return next({
-          name: 'Login',
-          query: { redirect: to.fullPath }
-        })
-      }
+      // if (!initialized) {
+      //   // Redirection vers la page de connexion avec l'URL de retour
+      //   return next({
+      //     name: 'Login',
+      //     query: { redirect: to.fullPath }
+      //   })
+      // }
     }
     
     // Vérification des droits administrateur si requis

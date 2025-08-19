@@ -172,7 +172,7 @@
               <ExclamationTriangleIcon class="w-5 h-5 text-red-600 mr-3 flex-shrink-0" />
               <div>
                 <p class="text-sm font-medium text-red-800">Connexion interrompue</p>
-                <p class="text-xs text-red-600 mt-1">Vérifiez votre connexion internet</p>
+                <p class="text-xs text-red-600 mt-1">Vérifiez votre connexion au NAS</p>
               </div>
             </div>
           </div>
