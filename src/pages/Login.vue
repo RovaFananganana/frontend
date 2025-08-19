@@ -36,7 +36,7 @@ const password = ref('')
 const message = ref('')
 
 // ton backend Flask (pas directement le NAS !)
-const API_URL = "http://127.0.0.1:5001/api/auth"   // à adapter selon la config
+const API_URL = "http://127.0.0.1:5001/api/nas"   // à adapter selon la config
 
 async function onSubmit() {
   try {
