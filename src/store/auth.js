@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { authService } from '@/services/authService'
 import { useToast } from 'vue-toastification'
+import { useRouter } from 'vue-router'
 import router from '@/router'
 
 /**
@@ -18,7 +19,7 @@ export const useAuthStore = defineStore('auth', () => {
   const maxLoginAttempts = ref(5) // Nombre maximum de tentatives
   
   const toast = useToast()
-
+  const router = useRouter()  
   // Getters (computed)
   const isAuthenticated = computed(() => {
     return !!(token.value && user.value)
@@ -143,8 +144,9 @@ export const useAuthStore = defineStore('auth', () => {
     toast.info('Vous avez été déconnecté')
     
     // Redirection vers la page de connexion
-    await router.push('/login')
+    router.push('/login') 
   }
+  
 
   /**
    * Rafraîchissement du token JWT

@@ -17,7 +17,7 @@
       ]"
     >
       <Sidebar 
-        :is-mobile-open="isMobileSidebarOpen"
+        :is-open="isMobileSidebarOpen"
         @close-mobile="closeMobileSidebar"
       />
     </div>
@@ -36,7 +36,6 @@
       <!-- Zone de contenu principal avec scroll -->
       <main class="flex-1 overflow-auto bg-secondary-50 focus:outline-none">
         <div class="container mx-auto px-4 py-6 md:px-6 lg:px-8">
-          
           <!-- Fil d'ariane si présent -->
           <Breadcrumbs 
             v-if="showBreadcrumbs && breadcrumbs.length > 1"
@@ -44,7 +43,6 @@
             class="mb-6"
             @navigate="handleBreadcrumbNavigation"
           />
-          
           <!-- Slot pour le contenu de la page -->
           <div class="animate-fade-in">
             <slot />

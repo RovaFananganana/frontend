@@ -35,13 +35,11 @@
             v-model="searchQuery"
             @keydown.enter="performSearch"
             @keydown="handleSearchKeydown"
-            placeholder="Rechercher des fichiers... (Ctrl+K)"
-            class="w-80 pl-10 pr-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+            placeholder="Rechercher des fichiers"
+            class="w-[500px] pl-10 pr-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
           >
           <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
-            <kbd class="px-2 py-1 text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded">
-              ⌘K
-            </kbd>
+
           </div>
         </div>
       </div>
@@ -117,8 +115,8 @@
             class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
           >
             <img 
-              class="w-8 h-8 rounded-full" 
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+              class="w-9 h-9 rounded-full" 
+              src="/profil-2.png" 
               alt="Photo utilisateur"
             >
           </button>

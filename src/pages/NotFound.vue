@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4">
+  <div class="min-h-screen flex flex-col items-center justify-center bg-gray-40 px-3">
     <h1 class="text-9xl font-extrabold text-blue-600 mb-6 select-none">404</h1>
     <h2 class="text-3xl font-semibold mb-4 text-gray-800">Oups ! Page non trouvée</h2>
     <p class="text-gray-600 mb-8 max-w-md text-center">
